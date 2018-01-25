@@ -1,0 +1,17 @@
+.sensor {
+	top: 10%;
+	left: 40%;
+	width: 10%;
+}
+
+.cerradura {
+	top: 42%;
+	left: 16.5%;
+	width: 8%;
+}
+
+.luz {
+	top: 5%;
+	left: 60%;
+	width: 4%;
+}

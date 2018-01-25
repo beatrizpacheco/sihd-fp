@@ -1,0 +1,99 @@
+/*
+body {
+	background-color: #2639E6;
+	padding: 0;
+	margin: 0;
+	overflow:hidden;
+}
+
+#titulo {
+	color: white;
+	width:100%; 
+	text-align:center;
+}
+
+#subtitulo {
+	width: 100%;
+	color: white;
+	text-align:center;
+	margin-top: -15px;
+}
+
+.cabecera {
+	width: 100%;
+	background-color: #2639E6;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.cabecera a {
+	text-decoration: none;
+}
+
+.cabecera img{
+	width: 85px;
+}
+
+.cabecera td {
+	padding-left: 10px;
+}
+*/
+
+.contenedor {
+	clear:left;
+	float:left;
+	width:100%;
+	overflow:hidden;
+}
+
+.auxiliar {
+	
+	float:left;
+	width:100%;
+	position:relative;
+	right:0;
+	background-color: #7F88FF;
+}
+
+.menu {
+	float:left;
+	width:15%;
+	position:relative;
+	left:0%;
+	overflow:hidden;
+	padding-left: 1%;
+	padding-right:1%;
+	background-color: #7F88FF;
+	color: white;
+}
+
+.cuerpo {
+	float:left;
+	width:81%;
+	position:relative;
+	left:0%;
+	overflow:hidden;
+	padding-left:1%;
+	padding-right:1%;
+}
+
+.imagen-habitacion {
+	width:100%;
+	max-height:100%;
+	position: relative;
+	z-index: 1;
+}
+
+.elemento-habitacion {
+	position: absolute;
+	z-index: 2;
+}
+
+.descripcion-elemento {
+	color: black;
+	font-weight: bold;
+}
+
+.enlace-descripcion {
+	color: blue;
+}

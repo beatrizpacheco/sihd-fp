@@ -1,0 +1,112 @@
+﻿<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta charset="UTF-8">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="./style/estancia-generica.css">
+	<link rel="stylesheet" type="text/css" href="./style/paginaPrincipal.css">
+	<link rel="stylesheet" type="text/css" href="./style/layoutElemento.css">
+	<script src="./script/jquery-2.1.3.min.js"></script>
+	<script src="./script/tile.js"></script>
+	<script src="./script/globos.js"></script>
+	<script src="./script/funciones.js"></script>
+	
+	<script>
+		$(document).ready(
+			function(){
+				alturaMinima = $(document).height();
+				alturaCabecera = $(".cabecera_nueva").height();
+				alturaCuerpo = $(".cuerpo").height();
+				if( alturaMinima > (alturaCabecera+alturaCuerpo) ){
+					$(".cuerpo").height(alturaMinima-alturaCabecera);
+				}
+				//$(".cuerpo").css('height', 500);
+			}
+		);
+	</script>
+</head>
+<body>
+	
+	<!-- cabecera -->
+	<div class="cabecera_nueva">
+		<a class="titulo_principal" style="display:block;" href="./index.html">
+			<!--<a href="./index.html">-->
+				<h1 id="titulo">Hogar Digital</h1>
+				<h3 id="subtitulo">2º STI
+				<h3 id="subtitulo">IES Benjamin Rua</h3>
+			</a>
+		<!--</div>-->
+		<div class="imagenes_grupos">
+			<img id="imagen_grupo1" class="oculto" src="img/grupo1.jpg" />
+			<img id="imagen_grupo2" class="oculto" src="img/grupo2.jpg" />
+			<img id="imagen_grupo3" class="oculto" src="img/grupo3.jpg" />
+			<img id="imagen_grupo4" class="oculto" src="img/grupo4.jpg" />
+			<img id="imagen_grupo5" class="oculto" src="img/grupo5.jpg" />
+			<img id="imagen_grupo6" class="oculto" src="img/grupo6.jpg" />
+			<img id="imagen_grupo7" class="oculto" src="img/grupo7.jpg" />
+			<img id="imagen_grupo8" class="oculto" src="img/grupo8.jpg" />
+			<img id="imagen_grupo9" class="oculto" src="img/grupo9.jpg" />
+			<img id="imagen_grupo10" class="oculto" src="img/grupo10.jpg" />
+			<img id="imagen_grupo11" class="oculto" src="img/grupo11.jpg" />
+		</div>
+	</div>
+	
+	<!-- Contenedor general de la pagina (incluye menu y cuerpo) -->
+	<div class="contenedor">
+	
+		<!-- div auxiliar para completar el maquetado de la pagina -->
+		<div class="auxiliar">
+	
+			<!-- menu de la parte izquierda -->
+			<div class="menu">
+				<p>
+					<noscript>
+						<p style="color:8B2222;">Esta página necesita que JavaScript esté habilitado para su correcta visualización y funcionamiento.</p>
+						<p>
+							Para habilitar JavaScript consulte <a href="http://www.enable-javascript.com/es/">aquí.</a>
+						</p>
+					</noscript>
+				</p>
+				<p>
+					Haga <a href="index.html">click aquí</a> para volver a la página de inicio.
+				</p>
+			</div>
+			
+			<!-- cuerpo principal de la pagina -->
+			<div class="cuerpo" style="background-color:#8d93e1;">
+			<h3>
+				Tarjeta control puerto paralelo - cerradura electrónica
+			</h3>
+			
+			<h4>
+			Control de Tarjeta de Puerto Paralelo
+			</h4>
+			
+			<p>
+			El objetivo de esta práctica es hacer funcionar y controlar una tarjeta de puerto paralelo a partir de un programa. La aplicación será la activación o desactivación de distintos dispositivos.
+			</p>
+			
+			<h4>
+			DESCRIPCIÓN DE TAREAS
+			</h4>
+
+			<p>
+			Es necesario crear un programa que servirá como interfaz de control de la tarjeta. Para ello, hemos usado Microsoft Visual 2010. Una vez descargado e instalado, seguimos las instrucciones del archivo PDF “Apuntes” que contiene la carpeta “Programa”, facilitada por el administrador. Después de editar el texto del programa, se compila y ya está listo para usarse.Es necesario activar el puerto paralelo para que funcione. Para ello, usamos el programa “UserPort” que encontraremos en la página web: olmo.pntic.mec.es/jmarti50/puerto_xp/userport.htm . Después de descargarlo, ejecutamos el programa y hacemos click en “START” 1 vez (en su defecto, hacemos click en STOP y luego en START). Así dejamos activado el puerto paralelo.Por último, conectamos la tarjeta con el PC a través del cable paralelo. Ejecutamos el programa Puerto_Paralelo.exe, y nos saldrá en pantalla una interfaz con botones ON/OFF con los que activaremos o desactivaremos los distintos relés de la tarjeta puerto paralelo. Con el botón RESET volvemos todos los relés a su estado original. Así, podremos ser capaces de controlar muchos dispositivos que nos permiten tener mayor comodidad y ahorro en el hogar.
+			</p>
+			
+			
+			<table>
+			<tr>
+			
+			<td><img src="img/puerto.jpg" class="ancho-variable" onclick="$.extenderEncoger(this);" data-anchoOriginal="369px" data-anchoReducido="200px" data-extendido="false"/></td>
+			<td><img src="img/paralelo.jpg" class="ancho-variable" onclick="$.extenderEncoger(this);" data-anchoOriginal="369px" data-anchoReducido="200px" data-extendido="false"/></td>
+			
+			</tr>
+			</table>
+			
+			
+			</div>
+		</div>
+	</div>
+</body>
+</html>

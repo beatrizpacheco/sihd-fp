@@ -1,0 +1,117 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta charset="UTF-8">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="./style/estancia-generica.css">
+	<link rel="stylesheet" type="text/css" href="./style/paginaPrincipal.css">
+	<link rel="stylesheet" type="text/css" href="./style/layoutElemento.css">
+	<script src="./script/jquery-2.1.3.min.js"></script>
+	<script src="./script/tile.js"></script>
+	<script src="./script/globos.js"></script>
+	<script src="./script/funciones.js"></script>
+	
+	<script>
+		$(document).ready(
+			function(){
+				alturaMinima = $(document).height();
+				alturaCabecera = $(".cabecera_nueva").height();
+				alturaCuerpo = $(".cuerpo").height();
+				if( alturaMinima > (alturaCabecera+alturaCuerpo) ){
+					$(".cuerpo").height(alturaMinima-alturaCabecera);
+				}
+				//$(".cuerpo").css('height', 500);
+			}
+		);
+	</script>
+</head>
+<body>
+	
+	<!-- cabecera -->
+	<div class="cabecera_nueva">
+		<a class="titulo_principal" style="display:block;" href="./index.html">
+			<!--<a href="./index.html">-->
+				<h1 id="titulo">Hogar Digital</h1>
+				<h3 id="subtitulo">2º STI
+				<h3 id="subtitulo">IES Benjamin Rua</h3>
+			</a>
+		<!--</div>-->
+		<div class="imagenes_grupos">
+			<img id="imagen_grupo1" class="oculto" src="img/grupo1.jpg" />
+			<img id="imagen_grupo2" class="oculto" src="img/grupo2.jpg" />
+			<img id="imagen_grupo3" class="oculto" src="img/grupo3.jpg" />
+			<img id="imagen_grupo4" class="oculto" src="img/grupo4.jpg" />
+			<img id="imagen_grupo5" class="oculto" src="img/grupo5.jpg" />
+			<img id="imagen_grupo6" class="oculto" src="img/grupo6.jpg" />
+			<img id="imagen_grupo7" class="oculto" src="img/grupo7.jpg" />
+			<img id="imagen_grupo8" class="oculto" src="img/grupo8.jpg" />
+			<img id="imagen_grupo9" class="oculto" src="img/grupo9.jpg" />
+			<img id="imagen_grupo10" class="oculto" src="img/grupo10.jpg" />
+			<img id="imagen_grupo11" class="oculto" src="img/grupo11.jpg" />
+		</div>
+	</div>
+	
+	<!-- Contenedor general de la pagina (incluye menu y cuerpo) -->
+	<div class="contenedor">
+	
+		<!-- div auxiliar para completar el maquetado de la pagina -->
+		<div class="auxiliar">
+	
+			<!-- menu de la parte izquierda -->
+			<div class="menu">
+				<p>
+					<noscript>
+						<p style="color:8B2222;">Esta página necesita que JavaScript esté habilitado para su correcta visualización y funcionamiento.</p>
+						<p>
+							Para habilitar JavaScript consulte <a href="http://www.enable-javascript.com/es/">aquí.</a>
+						</p>
+					</noscript>
+				</p>
+				<p>
+					Haga <a href="index.html">click aquí</a> para volver a la página de inicio.
+				</p>
+			</div>
+			
+			<!-- cuerpo principal de la pagina -->
+			<div class="cuerpo" style="background-color:#8d93e1;">
+			<h3>
+				Modem GSM
+			</h3>
+			
+			<h4>
+			INTRODUCCIÓN O ENUNCIADO. MARCO TEÓRICO. DESCRIPCIÓN DE TAREAS
+			</h4>
+			
+			<p>
+			El modem GSM utilizado es de la marca Domótica Viva, en concreto el modelo Domobile versión 1.1. Entre las muchas aplicaciones de control, como  calefacción, sensores, o diferentes dispositivos integrados en el hogar digital, hemos decidido controlar una electro-válvula para activar el riego del jardín. Además dispondrá de dos sensores que nos avisarán mediante mensaje al móvil del nivel de humedad en el jardín y el nivel del depósito de agua para el riego. Tras la inspección inicial y la lectura del manual de usuario proporcionado por el fabricante, hemos procedido a la puesta en marcha y posterior configuración del dispositivo.
+			</p>
+			
+			<h4>
+			PUESTA EN MARCHA Y CONFIGURACIÓN DEL MODEM GSM
+			</h4>
+				
+			<p>
+			Comenzamos con su puesta en marcha insertando una tarjeta SIM en el dispositivo, (esta tarjeta debe estar sin número pin de bloqueo inicial) conectamos la antena y alimentamos conectando a la red eléctrica mediante el adaptador de corriente suministrado. Comprobamos que el dispositivo funciona correctamente y se ha conectado a la red GSM tal y como indican los led que integra el modem. 
+			Procedemos a configurar el dispositivo mediante SMS:
+			</p>
+			
+			<p>
+			<ul>
+				<li> Cambio de contraseña inicial. Por defecto el dispositivo trae contraseña “1”, para cambiarla se debe introducir el siguiente comando < 1 p4 > donde “p” es el comando y “4” es la nueva contraseña. </li>
+				<li> Fijar alarma de envío. Hay que establecer un teléfono de contacto al que lleguen los mensajes de aviso. < 4 ta690741521 >  Donde “ta” es el comando para establecer el primer número de contacto. Si se quieren establecer más números de contacto el comando será “tb” y asi sucesivamente.</li>
+				<li> Encendido y apagado de la electro-válvula. Para encender la electro-válvula el comendo es el siguiente < 4 r2a > , para su apagado introduciremos el comando < 4 r2n > </li>
+				<li> Cierre de electro-válvula cuando el depósito de agua este vacío. De esta manera la electro-válvula será gobernada también automáticamente a través del sensor del depósito de agua. El comando es el siguiente < 4 e2mdeposito.vacio > </li>
+				<li> Aviso de falta de riego. Para el envío de mensaje de aviso  < 4 e1afalta.de.riego > de esta manera nos avisara si el nivel de humedad del jardín es bajo. </li>
+			</ul>
+			</p>
+			<script>
+				
+			</script>
+			<img class="imagen-habitacion ancho-variable" src="img/instalacionmodem.jpg" onclick="$.extenderEncoger(this);" data-anchoOriginal="539px" data-anchoReducido="200px" data-extendido="false"/>	
+			
+			
+			</div>
+		</div>
+	</div>
+</body>
+</html>

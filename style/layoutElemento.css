@@ -1,0 +1,11 @@
+html, body {
+	min-height: 100%;
+}
+
+.cuerpo img {
+	width: 200px;
+}
+
+.ancho-variable:hover{
+	cursor: pointer;
+}

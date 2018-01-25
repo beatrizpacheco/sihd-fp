@@ -1,0 +1,140 @@
+﻿
+<html>
+
+<head>
+	
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta charset="UTF-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="./style/paginaPrincipal.css">
+	<script src="./script/jquery-1.11.2.min.js"></script>
+	<script src="./script/funciones.js"></script>
+	
+</head>
+
+<body style="font-size:16px; line-height:17px;font-weight: normal;">
+
+	<!-- Titulo de la pagina -->
+	<div class="cabecera_nueva">
+		<a class="titulo_principal" style="display:block;">
+			<!--<a href="./index.html">-->
+				<h1 id="titulo">Hogar Digital</h1>
+				<h3 id="subtitulo">2º STI
+				<h3 id="subtitulo">IES Benjamin Rua</h3>
+			</a>
+		<!--</div>-->
+		<div class="imagenes_grupos">
+			<img id="imagen_grupo1" class="oculto" src="img/grupo1.jpg" />
+			<img id="imagen_grupo2" class="oculto" src="img/grupo2.jpg" />
+			<img id="imagen_grupo3" class="oculto" src="img/grupo3.jpg" />
+			<img id="imagen_grupo4" class="oculto" src="img/grupo4.jpg" />
+			<img id="imagen_grupo5" class="oculto" src="img/grupo5.jpg" />
+			<img id="imagen_grupo6" class="oculto" src="img/grupo6.jpg" />
+			<img id="imagen_grupo7" class="oculto" src="img/grupo7.jpg" />
+			<img id="imagen_grupo8" class="oculto" src="img/grupo8.jpg" />
+			<img id="imagen_grupo9" class="oculto" src="img/grupo9.jpg" />
+			<img id="imagen_grupo10" class="oculto" src="img/grupo10.jpg" />
+			<img id="imagen_grupo11" class="oculto" src="img/grupo11.jpg" />
+		</div>
+	</div>
+	
+	<!-- Barra lateral -->
+	<div class="barraLateral">
+		<p>
+			<script>
+				document.write("Haz click en una estancia para acceder a una vista detallada de la misma y de sus elementos.");
+			</script>
+			<p>
+			Haz click en uno de los enlaces para acceder directamente a la explicación de dicho elemento.
+			</p>
+			<noscript>
+				<p style="color:8B2222;">Esta página necesita que JavaScript esté habilitado para su correcta visualización y funcionamiento.</p>
+				<p>
+					Para habilitar JavaScript consulte <a href="http://www.enable-javascript.com/es/">aquí.</a>
+				</p>
+			</noscript>
+		</p>
+		
+		<h4>Recursos externos</h4>
+		<ul>
+			<li><a href="http://172.16.12.254"> Ip mserver Temperatura</a></li>
+			<li><a href="http://172.16.12.253"> Ip mserver Humedad</a></li>
+			<li><a href="http://172.16.12.30"> Ip CCTV</a></li>
+			<li><a href="http://172.16.12.56"> Ip Cámara IP</a></li>
+		</ul>
+			
+		<h4>Descargas</h4>
+		<ul>
+			<li><a href="./userport.zip">Activador Puerto Paralelo</a></li>
+			<li><a href="./bin.zip">Ejecutable Puerto Paralelo</a></li>
+		</ul>
+				
+		
+	</div>
+
+	<!-- Contenido de la pagina -->
+	<div id="contenedorPlano">
+	
+		<img src="img/plano2.jpg" alt="asdf" width="100%" style="position:relative;top:0;left:0;z-index:1;" />
+		
+		<div class="estancia salon" onclick="document.location.href='./salon.html'">
+			<ul class="lista-elementos lista-salon">
+				<li><a href="voip.html">Teléfono IP</a></li>
+				<li><a href="bpersiana.html">Control persiana</a></li>
+				<li><a href="musica.html">Control equipo de musica</a></li>
+			</ul>
+		</div>
+		
+		<div class="estancia cocina" onclick="document.location.href='./cocina.html'">
+			<ul class="lista-elementos lista-cocina">
+				<li><a href="ict.html">ICT</a></li>
+			</ul>
+		</div>
+		
+		<div class="estancia habitacion1" onclick="document.location.href='./habitacion1.html'">
+			<ul class="lista-elementos lista-habitacion1">
+				<li><a href="cctv.html">Cámara IP</a></li>
+			</ul>
+		</div>
+		
+		<div class="estancia habitacion2" onclick="document.location.href='./habitacion2.html'">
+			<ul class="lista-elementos lista-habitacion2">
+				<li><a href="ict.html">ICT</a></li>
+			</ul>
+		</div>
+		
+		<div class="estancia jardin" onclick="document.location.href='./jardin.html'">
+			<ul class="lista-elementos lista-jardin">
+				<li><a href="modemgsm.html">Módem GSM</a></li>
+			</ul>
+		</div>
+		
+		<div class="estancia pasillo" onclick="document.location.href='./pasillo.html'">
+			<ul class="lista-elementos lista-pasillo">
+				<li><a href="puertoparalelo.html">Cerradura electrónica</a></li>
+				<li><a href="eficienciaenergetica.html">Sensor movimiento</a></li>
+				<li><a href="luz.html">Control intensidad de luz</a></li>
+			</ul>
+		</div>
+		
+		<div class="estancia parteexterior" onclick="document.location.href='./parteexterior.html'">
+			<ul class="lista-elementos lista-parteexterior">
+				<li><a href="cctv.html">Cámaras seguridad</a></li>
+				<li><a href="ict.html">ICT Antena</a></li>
+			</ul>
+		</div>
+		
+		<div class="estancia pasarela" >
+			<ul class="lista-elementos lista-pasarela">
+				<li><a href="puertoparalelo.html">Puerto paralelo</a></li>
+			</ul>
+		</div>
+		
+	<!-- Fin del contenido de la pagina -->
+	</div>
+
+</body>
+
+</html>

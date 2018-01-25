@@ -1,0 +1,98 @@
+
+body {
+	background-color: #7F88FF;
+	padding: 0;
+	margin: 0;
+}
+
+.cabecera {
+	width: 100%;
+	background-color: #2639E6;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.cabecera a {
+	text-decoration: none;
+}
+
+.contenedor {
+	clear:left;
+	float:left;
+	width:100%;
+	overflow:hidden;
+}
+
+.auxiliar {
+	float:left;
+	width:100%;
+	position:relative;
+	right:0;
+}
+
+.menu {
+	float:left;
+	width:15%;
+	position:relative;
+	left:0%;
+	overflow:hidden;
+	padding-left: 10px;
+	padding-right:10px;
+	background-color: #7F88FF;
+	color: white;
+}
+
+.cuerpo {
+	float:left;
+	width:83%;
+	position:relative;
+	left:0%;
+	overflow:hidden;
+}
+
+.imagen-habitacion {
+	width:100%;
+	max-height:100%;
+	position: relative;
+	z-index: 1;
+}
+
+.elemento-habitacion {
+	position: absolute;
+	z-index: 2;
+}
+
+.telefono {
+	top: 65%;
+	left: 80%;
+	width: 10%;
+}
+
+.persiana {
+	top: 25%;
+	left: 17%;
+	width: 15%;
+}
+
+#titulo {
+	color: white;
+	width:100%; 
+	text-align:center;
+}
+
+#subtitulo {
+	width: 100%;
+	color: white;
+	text-align:center;
+	margin-top: -15px;
+}
+
+.descripcion-elemento {
+	color: black;
+	font-weight: bold;
+}
+
+.enlace-descripcion {
+	color: blue;
+	
+}

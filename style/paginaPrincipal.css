@@ -1,0 +1,313 @@
+
+html, body {
+	margin:0;
+	min-height: 100%;
+}
+
+body {
+	position: relative;
+	background-color:#B5BAFF;
+	font-size:16px;
+	line-height:17px;
+	font-weight: normal;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.cabecera_nueva {
+	width: 100%;
+	overflow: hidden;
+	background-color:#B5BAFF;
+	/*clear:both;*/
+}
+.cabecera_nueva a {
+	text-decoration:none;
+}
+.cabecera_nueva .titulo_principal {
+	/*width: 20%;*/
+	padding-left: 1%;
+	padding-right: 1%;
+	float: left;
+	
+	/*clear:both;*/
+}
+.cabecera_nueva .imagenes_grupos {
+	width: 78%;
+	/*clear:both;*/
+	float: left;
+	/*padding-left: 0%;*/
+	padding-top: 0%;
+}
+.imagenes_grupos img {
+	width: 12.66%;
+	float: left;
+	/*padding-right:2%;*/
+	padding-top:1%;
+	margin-top: auto;
+}
+.contenedorPlano {
+	/*clear:both;*/
+}
+.barraLateral {
+	clear: both;
+}
+.oculto {
+	display: none;
+}
+.titulo_principal h1 {
+	line-height:2em;
+	margin-top: auto;
+}
+
+.cabecera {
+	width:100%;
+	background-color: #2639E6;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.cabecera a {
+	text-decoration: none;
+}
+
+#contenedorPlano {
+	//background-color: white;
+	//padding-top: 20px;
+	/*margin-left: 15%; */
+	width:83%;
+	/*width: 100%;*/
+	/*height: 100%;*/
+	position:relative;
+	float: left;
+	/*background: url("../img/plano2.jpg");*/
+	background-size: 100%;
+    background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.barraLateral {
+	
+	width: 15%;
+	height: 100%;
+	float: left;
+	padding: 1%;
+	padding-left: 1%;
+	/*padding-right:10px;*/
+	background-color: #7F88FF;
+	color: white;
+	/*overflow: hidden;*/
+}
+
+#titulo {
+	color: white;
+	width:100%; 
+	text-align:center;
+}
+
+#subtitulo {
+	width: 100%;
+	color: white;
+	text-align:center;
+	margin-top: -15px;
+}
+
+
+.cuadroTexto {
+	border-style: solid;
+	border-color: #804BF4;
+	border-radius: 5px;
+	background-color: white;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index:10;
+}
+
+.imagen {
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+
+a {
+	margin-left: 5px;
+	color: blue;
+}
+
+.cuadroTexto {
+	float:left; 
+	visibility:hidden; 
+	max-width:200px;
+}
+
+.tituloComentario{
+	margin-left: 5%; 
+	margin-right: 5%;
+	font-weight: bold;
+}
+
+.textoComentario {
+	max-width:200px; 
+	margin-left: 5%; 
+	margin-right: 5%;
+	margin-top:25px;
+	position:relative; 
+	top:0; 
+	left: 0; 
+	z-index:10; 
+	background-color:white; 
+}
+
+.contenedor {
+	width: 100%;
+	position: relative;
+	top: 0;
+	left:0;
+	overflow: hidden;
+}
+
+.descripcionLarga {
+	
+	margin-left:17%;
+	/*padding:100%;*/
+	width: absolute%;
+	
+}
+
+.imagenfondo {
+	position: relative;
+	top: 0;
+	left: 0%;
+	width: 100%;
+	z-index: -1;
+}
+
+.estancia{
+	/*border: 1px solid red;*/
+	z-index: 2;
+	cursor: pointer;
+}
+
+.estancia:hover{
+	/*border: 1px solid red;*/
+	z-index: 2;
+	background-color: rgba(125, 125, 125, 0.2);
+}
+
+.salon{
+	position: absolute;
+	width: 33%;
+	height: 60%;
+	top: 38%;
+	left: 16%;
+}
+
+.cocina{
+	position: absolute;
+	width: 33%;
+	height: 38%;
+	top: 39%;
+	left: 66%;
+}
+
+.habitacion1{
+	position: absolute;
+	width: 30%;
+	height: 35%;
+	top: 3.5%;
+	left: 69%;
+}
+
+.habitacion2{
+	position: absolute;
+	width: 28%;
+	height: 36%;
+	top: 3%;
+	left: 16%;
+}
+
+.jardin{
+	position: absolute;
+	width: 15.5%;
+	height: 60%;
+	top: 39%;
+	left: 0.8%;
+}
+
+.pasillo{
+	position: absolute;
+	width: 17%;
+	height: 77%;
+	top: 21.5%;
+	left: 49%;
+}
+
+.parteexterior{
+	position: absolute;
+	width: 15.5%;
+	height: 36%;
+	top: 2.5%;
+	left: 0.6%;
+}
+
+.pasarela{
+	position: absolute;
+	width: 33%;
+	height: 22%;
+	top: 77%;
+	left: 66%;
+}
+
+.lista-elementos{
+	position: absolute;
+	color: black;
+}
+
+.lista-salon{
+	padding-top: 32%;
+	padding-left: 35%;
+}
+
+.lista-cocina{
+	padding-top: 18%;
+	padding-left: 35%;
+}
+
+.lista-habitacion1{
+	padding-top: 18%;
+	padding-left: 35%;
+}
+
+.lista-habitacion2{
+	padding-top: 18%;
+	padding-left: 45%;
+}
+
+.lista-jardin{
+	padding-top: 65%;
+	padding-left: 26%;
+}
+
+.lista-pasillo{
+	padding-top: 50%;
+	padding-left: 18%;
+}
+
+.lista-parteexterior{
+	padding-top: 33%;
+	padding-left: 26%;
+}
+
+.lista-pasarela{
+	padding-top: 8%;
+	padding-left: 35%;
+}
+
+.cabecera img{
+	width: 85px;
+}
+
+.cabecera td {
+	padding-left: 10px;
+}
+
